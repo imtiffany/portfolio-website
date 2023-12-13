@@ -1,1 +1,76 @@
-https://necolas.github.io/normalize.css/8.0.1/normalize.css
+p{
+    color: #eeeeee;
+   
+}
+body{
+    background-color: #1e1e1e;
+    font-family: 'Literata', serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #eeeeee;
+}
+h1, h2, h3, h4{
+    line-height 1.4;
+}
+h1{
+    font-size: 36px;
+    font-weight: 700;
+}
+h2{
+    font-size: 32px;
+    font-weight: 700;
+}
+h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+img{
+    width: 100%;
+}
+a :hover{ 
+    color: #cc6540;
+    text-decoration: underline; /*underling when hovering over a link */
+}
+a :focus{ 
+    color: #cc6540;
+    text-decoration: underline; 
+}
+a :visited{
+color: #ff7f50
+}
+a :active{
+color: #994c30
+}
+.button.contact{
+    background-color: transparent;
+    color:#ff7f50;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+}
+.button{
+    display: inline-block;
+    background-color: ff7f50;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #994c30;
+    transition: 0.2s opacity;
+
+}
+.button.contact :hover{
+background-color: #ff7f50;
+color: #ffffff;
+}
+.button :hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+.button :focus{
+    opacity: 0.8;
+    text-decoration: underline;
+}
+.button :active{
+    color:#994c30;
+}

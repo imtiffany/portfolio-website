@@ -12,8 +12,9 @@
 </head>
 <body>
     <header>
-        <div></div>
-        <img src="img/porfolio website/logo_portolio@2.png" alt="logo">
+        
+        <div class="container">
+        <img class="logo" src="img/porfolio website/logo_portolio@2.png" alt="logo">
         <nav>
             <ul>
             <li><a href="./project_sunny-days.html">My Projects</a></li>
@@ -21,18 +22,19 @@
             <li><a href="./index.html">Contact Me</a></li>
             </ul>
         </nav>
-
+</div>
     </header>
     <main>
         <div>
+        <div id="hero" class="container">
     <h1>Hi my name is Tiffany Dorris</h1>
     <span>I am a UI Designer from Chicago</span>
     <div>I have a passion for making designs that are unique and accessible for everyone!</div>
-</div>
+        </div>
 <div>
-    <div>
-        <h2>My Work</h2>
-        <div><!--open row that holds (2) columns for project-->
+    <div id="work">
+        <h2 class="container">My Work</h2>
+        <div class="row"><!--open row that holds (2) columns for project-->
             <div><!-- open first column (used for image) -->
                 <picture> <source srcset="img/project-1-sunny_days/sunny_image@1x.jpg" media="(max-width: 767px)">
                 <img src="img/project-1-sunny_days/sunny_image@2x.jpg" alt="My Image">
@@ -43,13 +45,13 @@
 <p><!--open paragraph --> 
 Sunny Days is a mobile money saving app designed for the everyday user to reach their money saving goals on an easy and motivational platform.
 </p>
-<a href="sunny-days.html" class="button">View more</a><!-- button or link label-->
+<a href="project_sunny-days.html" class="button">View more</a><!-- button or link label-->
             </div><!-- end second column-->
 
         </div><!-- end row that holds (2) columns for project-->
     </div>
 </div>
-<div><!--open row that holds (2) columns for project-->
+<div class="row"><!--open row that holds (2) columns for project-->
     <div><!-- open first column (used for image) -->
         <picture> <source srcset="img/project-2-80_20/20_Image@1x.jpg" media="(max-width: 767px)">
         <img src="img/project-2-80_20/20_Image@2x.jpg" alt="My Image">
@@ -64,15 +66,16 @@ Sunny Days is a mobile money saving app designed for the everyday user to reach 
     </div><!-- end second column-->
 
 </div><!-- end row that holds (2) columns for project-->
+</div>
     </main>
     <footer>
-        <div>
+        <div class="container">
             <div>
                 <h2>Get in Touch</h2>
                 <p>
                     Thank you for stopping by! If you'd like to get in touch with me please contact me via </p> 
                     Phone: <a href="tel: +123456789"> 123-456-7890</a> <p>
-                         Email: <a href="mailto:tiffanyvdorris@gmail.com" class="button contact">Send me an email</a>
+                         <a href="mailto:tiffanyvdorris@gmail.com" class="button contact">Send me an email</a>
                         </p>
                         <div>
                             <p>Socials</p>

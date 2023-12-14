@@ -12,19 +12,21 @@
 </head>
 <body>
     <header>
-        <div></div>
-        <img src="img/porfolio website/logo_portolio@2.png" alt="logo">
+        <div class="containter">
+        <img class="logo" src="img/porfolio website/logo_portolio@2.png" alt="logo">
         <nav>
-            <a href="./project_sunny-days.html">My Projects</a>
-            <a href="./about-tiffany-dorris.html">About Me</a>
-            <a href="./index.html">Contact Me</a>
+            <ul>
+            <li><a href="./project_sunny-days.html">My Projects</a></li>
+            <li><a href="./about-tiffany-dorris.html">About Me</a></li>
+            <li><a href="./index.html">Contact Me</a></li>
+            </ul>
         </nav>
-
+        </div>
     </header>
     <main>
-        <h1>About</h1>
+        <h1 class="container">About</h1>
         <img src="img/porfolio website/me_image@1x.jpg" alt="Profile Photo">
-        <div>
+        <div class="container">
             <h3>Hello!</h3>
             <p>Thank you for viewing my portfolio, allow me to introduce myself. 
                 My name is Tiffany and I am a UI designer located in the Chicago, Illinois. It has been a passion of mine to design for as long as I could remember, however, the journey it took to realize this was not the most straightforward process.
@@ -34,6 +36,7 @@
             <p>Fast forward to today, here I am deciding that it is never too late to chase a new dream. The journey may have had a few pit stops but a long the way it gave me the passion and drive it takes to create unique UI designs that are special and inclusive to all. 
             </p>
         </div>
+        <div class="row">
         <h3>My Skills</h3>
         <div><!--open row that holds (2) columns for project-->
             <div><!-- open first column (used for image) -->
@@ -55,31 +58,34 @@
                         <li>Github</li>
                     </ul>
                 </div><!--end first column-->
+            </div>
+            </div>
         </div>
-        </div>
-        <div>
+        <div class="container">
             <h3>CV</h3>
-            <a href="files/Tiffany Dorris_Resume.pdf" target="_blank" relm="noreferrer" class="button contact">My Resume for Viewing</a>
-
+            <a href="files/Tiffany Dorris_Resume.pdf" target="_blank" class="button contact">My Resume for Viewing</a>
+        
         </div>
     </main>
     <footer>
-        <div>
+        <div class="container">
             <div>
                 <h2>Get in Touch</h2>
                 <p>
                     Thank you for stopping by! If you'd like to get in touch with me please contact me via </p> 
-                    Phone: <a href="tel: +123456789"> 123-456-7890</a> <p>
-                        Email: <a href="mailto:tiffanyvdorris@gmail.com" class="button contact">Send me an email</a>
+                    Phone:<a href="tel: +123456789"> 123-456-7890</a> <p>
+                         <a href="mailto:tiffanyvdorris@gmail.com" class="button contact">Send me an email</a>
                         </p>
                         <div>
                             <p>Socials</p>
                             <!--social media Layout and placeholder-->
                             <ul>
-                            <li></li><a href="https://www.linkedin.com/in/tiffany-dorris-8023a118b/" target="_blank" relm="noreferrer">
+                            <li></li>
+                            <a href="https://www.linkedin.com/in/tiffany-dorris-8023a118b/" target="_blank" relm="noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
                             </a>
-                           <li></li> <a href="https://www.behance.net/TiffanyUI" target="_blank" relm="noreferrer">
+                           <li></li> 
+                           <a href="https://www.behance.net/TiffanyUI" target="_blank" relm="noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2 .6-8.7 .6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z"/></svg>
                             </a>
                             </ul>

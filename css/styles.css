@@ -2,6 +2,16 @@ p{
     color: #eeeeee;
    
 }
+header{
+    background-color: #eeeeee;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px 0;
+}
+*{
+    box-sizing: border-box;
+}
 body{
     background-color: #1e1e1e;
     font-family: 'Literata', serif;
@@ -24,9 +34,14 @@ h2{
 h3{
     font-size: 28px;
     font-weight: 700;
+    text-align: center;
+    color: #eeeeee;
+    padding: 30px 30px 30px 30px;
 }
 img{
     width: 100%;
+    padding: 0 30px;
+    border-radius: 25px;
 }
 
 a :visited{ /* visited link */
@@ -76,4 +91,61 @@ color: #187cff;
 }
 .button :active{
     color:#2298ff;
+}
+
+/*layout styling*/
+
+.container{
+    padding: 0 15px;
+    text-align: center;
+}
+.row{
+    margin: 25px 0;
+}
+.row h3{
+    text-align: left;
+    margin: 0 0;
+    padding: 0 0;
+}
+#hero{
+    background-color: #eeeeee;
+    color: #1e1e1e;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+
+}
+#hero h1{
+    text-align: center;
+    color: #1e1e1e;
+    margin: 0;
+    padding: .67em 0;
+
+}
+
+.logo{
+    max-width: 250px;
+}
+nav > ul > li{
+    list-style-type: none;
+    padding: 0 5px;
+    display: inline-block;
+    text-align: center;
+}
+nav > ul > li > a :visited :hover :active{
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #187cff;
+
+}
+.css-box-shadow{
+	/*start ------------*/
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #F8F8F8; 
+	border: solid #BDBDBD 3px; 
+	box-shadow: 8px 11px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 8px 11px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 8px 11px 20px rgba(0, 0, 0, 0.5)  ; 
 }

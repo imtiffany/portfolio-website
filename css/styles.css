@@ -20,6 +20,27 @@ body{
     line-height: 1.6;
     color: #eeeeee;
 }
+
+/*links again*/
+
+a:visited{
+   color: purple; 
+}
+
+a:hover{
+    color:#74beff;
+}
+
+a:focus{
+    color:#74beff;
+}
+
+a:active{
+    color:#0062e3;
+}
+
+/* h designs*/
+
 h1, h2, h3, h4{
     line-height: 1.4;
 }
@@ -38,26 +59,16 @@ h3{
     color: #eeeeee;
     padding: 30px 30px 30px 30px;
 }
+
+/* img for site*/
+
 img{
     width: 100%;
     padding: 0 30px;
     border-radius: 25px;
 }
 
-a :visited{ /* visited link */
-color: #c3c3c3;
-}
-a :hover{ 
-    color: #187cff;
-    text-decoration: underline; /*underling when hovering over a link */
-}
-a :focus{ 
-    color: #187cff;
-    text-decoration: underline; 
-}
-a :active{ /* selected link*/
-color: #2298ff;
-}
+/* buttons*/
 
 .button.contact{
     background-color: #187cff;

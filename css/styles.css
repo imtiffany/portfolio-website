@@ -8,6 +8,7 @@ header{
     margin: 10px;
     text-align: center;
     padding: 10px 0;
+    box-shadow: 8px 11px 20px #757676;
 }
 *{
     box-sizing: border-box;
@@ -149,14 +150,4 @@ nav > ul > li > a :visited :hover :active{
     font-weight: 700;
     color: #187cff;
 
-}
-.css-box-shadow{
-	/*start ------------*/
-	width: [object Object]px; 
-	height: [object Object]px; 
-	background: #F8F8F8; 
-	border: solid #BDBDBD 3px; 
-	box-shadow: 8px 11px 20px rgba(0, 0, 0, 0.5)  ; 
-	-webkit-box-shadow: 8px 11px 20px rgba(0, 0, 0, 0.5)  ; 
-	-moz-box-shadow: 8px 11px 20px rgba(0, 0, 0, 0.5)  ; 
 }

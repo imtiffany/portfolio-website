@@ -61,6 +61,7 @@ h3{
     padding: 30px 30px 30px 30px;
 }
 
+
 /* img for site*/
 
 img{
@@ -75,7 +76,9 @@ img{
     background-color: #187cff;
     color:#eeeeee;
     text-transform: uppercase;
-    border-bottom:2px solid #eeeeee
+    border-bottom:2px solid #eeeeee;
+    transition: 0.2s opacity;
+    transition-property: opacity;
     
 }
 .button{
@@ -87,6 +90,7 @@ img{
     border-radius: 3px;
     border-bottom: 2px solid #187cff;
     transition: 0.2s opacity;
+    transition-property: opacity;
 
 }
 .button.contact :hover{
@@ -143,11 +147,109 @@ nav > ul > li{
     padding: 0 5px;
     display: inline-block;
     text-align: center;
-}
-nav > ul > li > a :visited :hover :active{
-    padding: 0;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #187cff;
 
 }
+
+
+/* media queiries*/
+
+/* medium device*/
+@media only screen and (min-width: 640px){
+    header{
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+    
+    nav{
+        width: auto;
+        float: right;
+        margin-top: -15px;
+    }
+    body{
+        font-size: 21;
+    }
+    #hero span{
+        display: block;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+
+    #about-page h3{
+        margin-top: 0;
+    
+    }
+
+}
+/* Large device*/
+@media only screen and (min-width: 1042px){
+.col-lg-7{
+    width: 58.33%;
+}
+.col-lg-5{
+    width: 41.66%;
+}
+
+.container{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    text-align: unset;
+    padding: 40px 0 -20px 40px;
+}
+
+.logo{
+    max-width: 400px;
+}
+
+
+nav{
+    width: auto;
+    float: right;
+    margin-top: -5px;
+}
+body{
+    font-size: 24;
+}
+#hero span{
+    display: block;
+}
+
+#about-page h3{
+    margin-top: 0;
+
+}
+
+
+}
+
+/* X-Large device*/
+
+@media only screen and (mind-width: 1440px){
+
+
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+
+
+/* animation */
+
+.saturn {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+
+@keyframes color-change {
+    0% {fill: #ed5555;}
+    50% {fill: #d6db42;}
+    100% {fill: #ff5900;}
+  }

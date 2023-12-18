@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://cdpn.io/jacknumber/fullpage/gPpJMp?anon=true&view= -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+    <script src="./stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+
+  <title>CodePen - SVG Demo</title>
+
+    <link rel="canonical" href="https://codepen.io/jacknumber/pen/gPpJMp">
+  
+  
+  
+  
+<style>
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: grey;
+}
+
+h2 {
+  margin-top: 0;
+  font-weight: normal;
+}
+div + h2 {
+  margin-top: 50px;
+}
+
+.caniuse {
+  opacity: 0.4;
+}
+.caniuse:hover {
+  opacity: 1;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  padding: 10px;
+  color: #ddd;
+  background: #181c22;
+}
+header code {
+  background: #37414f;
+}
+
+p {
+  margin: 0;
+}
+* + p {
+  margin-top: 15px;
+}
+
+.panel {
+  padding: 30px;
+}
+
+.svgs {
+  display: table-cell;
+}
+
+.details {
+  display: table-cell;
+  padding-left: 50px;
+  vertical-align: middle;
+}
+
+code {
+  font-size: 110%;
+  padding: 0 3px;
+  border-radius: 2px;
+}
+
+.block-1 {
+  background: #222831;
+  color: #7b8ba4;
+}
+.block-1 code {
+  background: #0d0f13;
+}
+
+.block-2 {
+  background: #393E46;
+  color: #9ca3af;
+}
+.block-2 code {
+  background: #22252a;
+}
+
+.block-3 {
+  background: #00ADB5;
+  color: #82f9ff;
+}
+.block-3 code {
+  background: #007c82;
+}
+
+.block-4 {
+  background: #EEEEEE;
+  color: #a2a2a2;
+}
+.block-4 code {
+  background: #d5d5d5;
+}
+
+/* Global SVG styles */
+svg {
+  height: 90px;
+}
+svg + svg {
+  margin-left: 30px;
+}
+svg path,
+svg line,
+svg polygon,
+svg rect,
+svg circle {
+  transition: 0.5s;
+}
+
+.stroke {
+  stroke: white;
+  stroke-width: 0.8;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.fill {
+  fill: white;
+  stroke: none;
+}
+
+/* Part: SVG Composition */
+.svg-composition svg:hover .fill {
+  stroke: white;
+  stroke-width: 0.1;
+  fill: none;
+}
+.svg-composition svg:hover .stroke {
+  stroke-width: 0.1;
+}
+
+/* Part: Colors on SVG */
+.cloud-flash .cloud, .cloud-flash .flash {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.cloud-flash .cloud {
+  stroke: white;
+}
+.cloud-flash .flash {
+  stroke: #feeb15;
+}
+
+/* Part: SVG stroke styles */
+.stroke-styles polyline {
+  stroke-width: 1.2;
+  stroke: white;
+  fill: none;
+}
+
+.big-flash-1 {
+  /* default values
+  stroke-linecap: butt;
+  stroke-linecap: miter;
+  */
+}
+
+.big-flash-2 {
+  stroke-linecap: square;
+  stroke-linejoin: bevel;
+}
+
+.big-flash-3 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Part: Sprite SVG */
+.moon-stars {
+  width: 95px;
+}
+
+/* Part: CSS transform */
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <header>
+  <p>Let's try to make a good and complete demo for SVG on the web :)</p>
+  <p><code>path</code>, <code>line</code>, <code>polygon</code>, <code>rect</code> <code>circle</code>, and <code>ellipse</code> are HTML tags.</p>
+  <p><code>fill</code> and <code>stroke</code> are CSS properties.</p>
+</header>
+<div id="inline-svg" class="panel block-1">
+  <h2>SVG Composition</h2>
+  <div class="svgs svg-composition">
+    <svg class="moon" viewBox="0 0 16.6 16.6">
+      <circle class="stroke" cx="8.2" cy="8.2" r="7.8"></circle>
+      <circle class="stroke" cx="6" cy="5.2" r="1.9"></circle>
+      <circle class="stroke" cx="7.1" cy="11.5" r="0.7"></circle>
+      <circle class="stroke" cx="12.6" cy="8.2" r="1.1"></circle>
+      <circle class="stroke" cx="3.8" cy="9.7" r="0.31"></circle>
+    </svg>
+    <svg class="saturn" viewBox="0 -0.5 19 15">
+      <path class="fill" d="M19.43,7.16C19.12,6,17.81,5.3,15.94,5A7.85,7.85,0,0,1,16.69,6,2.54,2.54,0,0,1,18.6,7.39a1.52,1.52,0,0,1-.24,1.17,5.74,5.74,0,0,1-1.45,1.54s0-.07,0-0.1a6.91,6.91,0,1,0-13,3.23C2.53,13,1.59,12.43,1.4,11.75a1.53,1.53,0,0,1,.24-1.17,4.33,4.33,0,0,1,.6-0.76A7.92,7.92,0,0,1,2.37,8.5C1,9.65.26,10.89,0.57,12s1.85,2,4,2.24a6.9,6.9,0,0,0,12.25-3c1.94-1.3,3-2.8,2.64-4.09M10,16a6,6,0,0,1-4.24-1.74H6.21a20.24,20.24,0,0,0,4.94-.66,19.86,19.86,0,0,0,4.59-1.78A6,6,0,0,1,10,16m6-5.31a18,18,0,0,1-5.06,2.09,19.41,19.41,0,0,1-4.73.63c-0.43,0-.83,0-1.21-0.06A6,6,0,1,1,16,10a6.11,6.11,0,0,1,0,.73" transform="translate(-0.5 -3.09)"></path>
+    </svg>
+  </div>
+  <div class="details">
+    Moon is composed of <code>circle</code>'s with stroke.<br>
+    Saturn is a <code>path</code> (a filled shape). You can't change line thickness.<br>
+    Hover to see the outline view.
+  </div>
+  
+  <h2>Colors on SVG</h2>
+  <div class="svgs">
+    <svg viewBox="0 0 18.64 17.33">
+      <path class="cloud-rain" d="M15.7,11.39a3.21,3.21,0,0,0,.8-6.31,2.41,2.41,0,0,0-4-1.91,4.8,4.8,0,0,0-8.78,1.9,3.2,3.2,0,0,0,.74,6.32H15.7Z" transform="translate(-0.75 -0.48)" fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"></path>
+      <line x1="11.87" y1="12.87" x2="7.92" y2="16.83" fill="none" stroke="#50bce2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <line x1="14.7" y1="12.87" x2="10.74" y2="16.83" fill="none" stroke="#50bce2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <line x1="9.05" y1="12.87" x2="5.09" y2="16.83" fill="none" stroke="#50bce2" stroke-linecap="round" stroke-linejoin="round"></line>
+      <line x1="6.22" y1="12.87" x2="2.27" y2="16.83" fill="none" stroke="#50bce2" stroke-linecap="round" stroke-linejoin="round"></line>
+    </svg>
+    <svg class="cloud-flash" viewBox="0 0 18.72 18.94">
+      <g>
+        <path class="cloud" d="M15.78,4.51V4.41a2.4,2.4,0,0,0-4-1.81A4.8,4.8,0,0,0,3,4.5a3.2,3.2,0,0,0,.74,6.32H15a3.2,3.2,0,0,0,.8-6.31" transform="translate(-0.01 0.1)"></path>
+        <polyline class="flash" points="9.83 13.27 7.28 15.82 9.82 15.82 7.2 18.44"></polyline>
+      </g>
+    </svg>
+  </div>
+  <div class="details">
+    Colors can be set in the SVG or in CSS (for inline SVG only).<br>
+    Rain has inline styles and flash has CSS styles.
+  </div>
+  
+  <h2>SVG stroke styles</h2>
+  <div class="svgs stroke-styles">
+    <svg class="big-flash-1" viewBox="-0.5 -0.5 9 16">
+      <polyline points="7.14 0.5 0.7 6.94 7.11 6.94 0.5 13.55"></polyline>
+    </svg>
+    <svg class="big-flash-2" viewBox="-0.5 -0.5 9 16">
+      <polyline points="7.14 0.5 0.7 6.94 7.11 6.94 0.5 13.55"></polyline>
+    </svg>
+    <svg class="big-flash-3" viewBox="-0.5 -0.5 9 16">
+      <polyline points="7.14 0.5 0.7 6.94 7.11 6.94 0.5 13.55"></polyline>
+    </svg>
+  </div>
+  <div class="details">
+    The first flash use default values (<code>stroke-linecap: butt</code> and <code>stroke-linejoin: miter</code>).<br>
+    The second flash use <code>stroke-linecap: square</code> and <code>stroke-linejoin: bevel</code>.<br>
+    The third flash use <code>stroke-linecap: round</code> and <code>stroke-linejoin: round</code>.
+  </div>
+</div>
+<div id="interaction-svg" class="panel block-2">
+  <h2>Sprite SVG</h2>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <symbol id="moon-stars" viewBox="0 0 19 19">
+      <polygon class="fill star" points="15.99 0 16.57 1.79 18.46 1.79 16.93 2.9 17.52 4.7 15.99 3.59 14.46 4.7 15.05 2.9 13.52 1.79 15.41 1.79 15.99 0"></polygon>
+      <polygon class="fill star" points="14.92 8.96 15.35 10.28 16.73 10.28 15.61 11.09 16.04 12.41 14.92 11.59 13.8 12.41 14.23 11.09 13.11 10.28 14.5 10.28 14.92 8.96"></polygon>
+      <polygon class="fill star" points="10.65 4.78 11.05 6.03 12.36 6.03 11.3 6.79 11.71 8.04 10.65 7.27 9.59 8.04 9.99 6.79 8.94 6.03 10.24 6.03 10.65 4.78"></polygon>
+      <path class="stroke" d="M6.58,6.68A9.69,9.69,0,0,1,8.24,1.24a8.94,8.94,0,1,0,8,15.17A9.74,9.74,0,0,1,6.58,6.68Z" transform="translate(-1.06 -0.6)"></path>
+    </symbol>
+  </svg>
+  <div class="svgs">
+    <svg class="moon-stars"><use xlink:href="#moon-stars"></use></svg>
+  </div>
+  <div class="details">
+    The moon is called with a <code>use</code> tag.<br>
+    Call a svg with a CSS background has the same contraints then  call an external SVG (you can't change color, etc.).
+  </div>
+</div>
+<div id="sprite-svg" class="panel block-3">
+  <h2>SVG Features <small><i>Coming soon</i></small></h2>
+  <div class="svgs">
+    <svg class="sunrise" viewBox="0 0 19 19">
+      <clippath id="cut-off-bottom">
+        <rect y="0.9" width="20" height="10"></rect>
+      </clippath>
+      <g clip-path="url(#cut-off-bottom)" class="sun">
+        <circle class="stroke" cx="10" cy="10.9" r="4.8"></circle>
+        <line class="stroke" x1="10" y1="1.8" x2="10" y2="4.5"></line>
+        <line class="stroke" x1="16.4" y1="4.5" x2="14.5" y2="6.4"></line>
+        <line class="stroke" x1="19.1" y1="10.9" x2="16.4" y2="10.9"></line>
+        <line class="stroke" x1="16.4" y1="17.3" x2="14.5" y2="15.4"></line>
+        <line class="stroke" x1="10" y1="20" x2="10" y2="17.3"></line>
+        <line class="stroke" x1="3.6" y1="17.3" x2="5.5" y2="15.4"></line>
+        <line class="stroke" x1="0.9" y1="10.9" x2="3.6" y2="10.9"></line>
+        <line class="stroke" x1="3.6" y1="4.5" x2="5.5" y2="6.4"></line>
+      </g>
+      <line class="stroke" x1="0.9" y1="10.9" x2="19.1" y2="10.9"></line>
+    </svg>
+  </div>
+  <div class="details">
+    The sun is masked with a clip-path (<code>clip</code> in CSS).
+  </div>
+  
+  <h2>SVG Transform <small><i>Coming soon</i></small></h2>
+</div>
+<div id="accessibility-svg" class="panel block-4">
+  <h2>Usefull properties <small><i>Coming soon</i></small></h2>
+  <h2>Accessiblity <small><i>Coming soon</i></small></h2>
+</div>
+<p>Sources:
+  </p><ul class="sources">
+    <li><a href="http://tutorials.jenkov.com/svg/svg-and-css.html" target="_blank">SVG styles</a></li>
+    <li><a href="https://sarasoueidan.com/blog/svg-transformations/" target="_blank">SVG transformation</a></li>
+    <li><a href="https://codepen.io/yoksel/full/fsdbu" target="_blank">SVG mask</a></li>
+  </ul>
+<p></p>
+  
+      <script id="rendered-js">
+// http://svgicons.sparkk.fr/
+//# sourceURL=pen.js
+    </script>
+
+  
+
+
+
+</body></html>

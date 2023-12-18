@@ -4,14 +4,14 @@ p{
 }
 header{
     background-color: #eeeeee;
-    padding: 10px;
+    padding: 10px 0 4px;
     margin: 10px;
-    text-align: center;
     padding: 10px 0;
     box-shadow: 8px 11px 20px #757676;
 }
 *{
     box-sizing: border-box;
+    
 }
 body{
     background-color: #1e1e1e;
@@ -140,31 +140,118 @@ color: #187cff;
 }
 
 .logo{
-    max-width: 250px;
+    max-width: 150px;
 }
-nav > ul > li{
-    list-style-type: none;
-    padding: 0 5px;
-    display: inline-block;
-    text-align: center;
+
+
+li{
+    list-style: none;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
 
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #1e1e1e;
+
+}
 
 /* media queiries*/
 
+/* small device*/
+
+@media only screen and (max-width: 375px){
+
+
+}
+
+
 /* medium device*/
-@media only screen and (min-width: 640px){
+@media only screen and (max-width: 640px){
+
+    nav > ul > li{
+        display: inline-block;
+        padding: 0;
+        margin: 1em 0;
+    }
+
     header{
         text-align: unset;
         padding: 20px 0 13px;
     }
-    
+
+    .logo{
+        min-width: 250px;
+    }
+
     nav{
         width: auto;
         float: right;
         margin-top: -15px;
     }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #eeeeee;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+
+    }
+
+
     body{
         font-size: 21;
     }
@@ -182,7 +269,7 @@ nav > ul > li{
 
 }
 /* Large device*/
-@media only screen and (min-width: 1042px){
+@media only screen and (max-width: 1042px){
 .col-lg-7{
     width: 58.33%;
 }

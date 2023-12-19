@@ -66,8 +66,8 @@ h3{
 
 img{
     width: 100%;
-    padding: 0 30px;
-    border-radius: 25px;
+    padding: 0 50px;
+    border-radius: 50px;
 }
 
 /* buttons*/
@@ -191,7 +191,7 @@ li{
 
 
 /* medium device*/
-@media only screen and (max-width: 640px){
+@media only screen and (max-width: 641px){
 
     nav > ul > li{
         display: inline-block;
@@ -269,7 +269,7 @@ li{
 
 }
 /* Large device*/
-@media only screen and (max-width: 1042px){
+@media only screen and (min-width: 1042px){
 .col-lg-7{
     width: 58.33%;
 }
@@ -300,10 +300,14 @@ nav{
 body{
     font-size: 24;
 }
-#hero span{
+#hero{
+    background-color: #eeeeee;
+    color: #1e1e1e;
+    padding: 0;
     display: block;
-}
+    width: 100%;
 
+}
 #about-page h3{
     margin-top: 0;
 

@@ -340,7 +340,7 @@ body {
 
 /* X-Large device*/
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (max-width: 1440px) {
 
 
 }

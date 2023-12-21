@@ -209,7 +209,7 @@ li {
 }
 
 /* medium device*/
-@media only screen and (min-width: 641px) {
+@media only screen and (max-width: 641px) {
     .logo {
         max-width: 150px;
     }

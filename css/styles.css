@@ -201,7 +201,7 @@ li {
 
 /* small device*/
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
 
     img{
         max-width: 100%;
@@ -209,7 +209,7 @@ li {
 }
 
 /* medium device*/
-@media only screen and (max-width: 641px) {
+@media only screen and (min-width: 641px) {
     .logo {
         max-width: 150px;
     }
@@ -291,7 +291,7 @@ li {
 
 }
 /* Large device*/
-@media only screen and (max-width: 1042px) {
+@media only screen and (min-width: 1042px) {
 .col-lg-7 {
     width: 58.33%;
 }
@@ -340,7 +340,7 @@ body {
 
 /* X-Large device*/
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 1440px) {
 
 
 }

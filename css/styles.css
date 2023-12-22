@@ -11,6 +11,11 @@ body {
     line-height: 1.6;
     color: #eeeeee;
 }
+main{
+    display: block;
+    max-width: 900px;
+    margin: auto;
+}
 
 p {
     color: #eeeeee;
